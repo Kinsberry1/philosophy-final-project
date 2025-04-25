@@ -1,35 +1,25 @@
-# Philosophy Final Project – PHIL 1313 (Spring 2025)
+# Philosophy Final Project - Keith Kingsberry
 
-## 📘 Course Information
-- **Course**: Introduction to Philosophy (PHIL 1313)
-- **Professor**: Stacey M. Burleson
-- **Institution**: North American University
-- **Semester**: Spring 2025
+This is a professional website showcasing my final research paper for PHIL 1313: Introduction to Philosophy at North American University (Spring 2025).
 
-## 📄 Project Description
-This project is a comprehensive analysis of an ethical theory studied in class. It includes:
-- A 4–6 page analytical research paper
-- A corresponding slideshow presentation
-- A brief oral video/podcast (faceless, reflective narration)
+## Project Title
+**Justice, Duty, and the Greater Good: Ethical Conflicts in The Dark Knight and Captain America: Civil War**
 
-The project explores the ethical concept of _[Insert Theory Here]_ and its application to my own life, values, and future career.
+## Key Features
+- MLA-formatted academic research paper
+- Full works cited section with clickable external references
+- Clean and professional design
+- Mobile responsive (works on phones and tablets)
+- Hosted using GitHub Pages
 
-## 📂 Project Components
-- `/paper/` – Final written paper (PDF)
-- `/presentation/` – Slide deck (PowerPoint or PDF)
-- `/recording/` – Audio or video presentation (optional)
-- `/sources/` – Cited research and bibliography
+## Technologies Used
+- HTML5
+- CSS3
+- GitHub Pages Hosting
 
-## 💡 Topics Explored
-- Ethical reasoning
-- Personal reflection
-- Real-world applications of moral theory
-
-## 🔖 Citation Style
-All references follow MLA formatting and are listed in `paper/works_cited.pdf`.
+## View the Live Project
+👉 [Click Here to View the Live Website](https://kinsberry1.github.io/philosophy-final-project/)
 
 ---
 
-## ✍️ Personal Note
-This project marks the start of my personal and professional transformation. It reflects both academic learning and emotional growth.
-
+© 2025 Keith Kingsberry
