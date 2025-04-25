@@ -5,6 +5,10 @@
   <title>About Me - Keith Kingsberry</title>
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6e/Philosophy-icon.png" type="image/png">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: "Times New Roman", Times, serif;
       font-size: 12pt;
@@ -13,46 +17,72 @@
       background-color: #ffffff;
       color: #000000;
     }
+
     .container {
       max-width: 800px;
       margin: auto;
     }
+
     h1 {
       text-align: center;
       margin-bottom: 1rem;
     }
+
     p {
       text-indent: 0.5in;
     }
+
     img {
       display: block;
       margin: 2rem auto;
       max-width: 400px;
       height: auto;
     }
+
     footer {
       text-align: center;
       margin-top: 3rem;
       font-size: 10pt;
       color: #555;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+      padding-top: 10px;
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeInAnimation 2s ease forwards;
+    }
+
+    @keyframes fadeInAnimation {
+      to {
+        opacity: 1;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>About Me</h1>
+  <div class="fade-in">
+    <nav style="text-align: center; margin-bottom: 2rem;">
+      <a href="index.html" style="margin-right: 20px; font-size: 16px; color: #0000EE; text-decoration: none;">Home</a>
+      |
+      <a href="about.html" style="margin-left: 20px; font-size: 16px; color: #0000EE; text-decoration: none;">About Me</a>
+    </nav>
 
-    <img src="images/batman-minimalist-art-4k-z0.jpg" alt="Batman Symbolizing Resilience">
+    <div class="container">
+      <h1>About Me</h1>
 
-    <p>My name is Keith Kingsberry. I am currently studying computer science with the goal of building a better future for myself. I originally pursued manual QA to break into IT and then earned an SDET certification, which I now understand is only the foundation of my true potential.</p>
+      <img src="images/batman-minimalist-art-4k-z0.jpg" alt="Batman Symbolizing Resilience">
 
-    <p>Through this Introduction to Philosophy course, I learned that my personal views and real-world experiences hold value and depth. Philosophy helped me realize how much critical thinking and questioning fit naturally into who I am. I found a surprising strength in being the 'devil's advocate,' challenging ideas to gain new perspectives.</p>
+      <p>My name is Keith Kingsberry. I am currently studying computer science with the goal of building a better future for myself. I originally pursued manual QA to break into IT and then earned an SDET certification, which I now understand is only the foundation of my true potential.</p>
 
-    <p>My long-term goal is to keep building my knowledge, master the skills I've started learning, and push myself beyond any limits. Much like Batman, my journey is not without struggle, but it is defined by resilience, internal strength, and the relentless pursuit of becoming better every day.</p>
+      <p>Through this Introduction to Philosophy course, I learned that my personal views and real-world experiences hold value and depth. Philosophy helped me realize how much critical thinking and questioning fit naturally into who I am. I found a surprising strength in being the 'devil's advocate,' challenging ideas to gain new perspectives.</p>
+
+      <p>My long-term goal is to keep building my knowledge, master the skills I've started learning, and push myself beyond any limits. Much like Batman, my journey is not without struggle, but it is defined by resilience, internal strength, and the relentless pursuit of becoming better every day.</p>
+    </div>
+
+    <footer>
+      © 2025 Keith Kingsberry | <a href="https://github.com/Kinsberry1" target="_blank">View on GitHub</a>
+    </footer>
   </div>
-
-  <footer>
-    © 2025 Keith Kingsberry
-  </footer>
 </body>
 </html>
