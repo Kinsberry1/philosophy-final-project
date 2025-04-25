@@ -1,4 +1,4 @@
-# Philosophy Final Project - Keith Kingsberry
+[# Philosophy Final Project - Keith Kingsberry
 
 This is a professional website showcasing my final research paper for PHIL 1313: Introduction to Philosophy at North American University (Spring 2025).
 
@@ -23,3 +23,4 @@ This is a professional website showcasing my final research paper for PHIL 1313:
 ---
 
 © 2025 Keith Kingsberry
+](https://kinsberry1.github.io/philosophy-final-project/about.html)
