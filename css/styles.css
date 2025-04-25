@@ -1,0 +1,79 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #1f2937;
+  overflow-x: hidden;
+}
+
+.face-half {
+  position: fixed;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.hero {
+  left: 0;
+  background-image: url('../images/hero.png'); /* replace with your actual image */
+}
+
+.villain {
+  right: 0;
+  background-image: url('../images/villain.png'); /* replace with your actual image */
+}
+
+header {
+  text-align: center;
+  background-color: #1f2937;
+  color: white;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.downloads a {
+  display: inline-block;
+  margin: 1rem 1rem 0 0;
+  padding: 0.75rem 1.25rem;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.downloads a:hover {
+  background-color: #2563eb;
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+}
