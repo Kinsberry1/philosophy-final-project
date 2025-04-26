@@ -10,7 +10,6 @@
     html {
       scroll-behavior: smooth;
     }
-
     body {
       font-family: 'Lato', sans-serif;
       font-size: 14pt;
@@ -19,7 +18,6 @@
       background: linear-gradient(to bottom right, #0c0f14, #1b1f27);
       color: #ffffff;
     }
-
     .container {
       max-width: 960px;
       margin: 2rem auto;
@@ -28,14 +26,12 @@
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     }
-
     nav {
       text-align: center;
       padding: 1.5rem;
       background-color: rgba(255, 255, 255, 0.05);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
-
     nav a {
       margin: 0 15px;
       font-size: 16px;
@@ -43,49 +39,59 @@
       text-decoration: none;
       transition: color 0.3s ease;
     }
-
     nav a:hover {
       color: #ffffff;
       text-decoration: underline;
     }
-
     .mla-header {
       margin: 0;
       text-align: left;
     }
-
     .paper-title {
       text-align: center;
       font-weight: 700;
       margin-top: 2rem;
       margin-bottom: 2rem;
     }
-
     p {
       text-indent: 0.5in;
       margin-bottom: 1rem;
       text-align: left;
     }
-
     ul {
       margin-top: 2rem;
       padding-left: 1.5rem;
     }
-
     li {
       margin-bottom: 1rem;
     }
-
     li a {
       color: #62aaff;
       text-decoration: none;
     }
-
     li a:hover {
       text-decoration: underline;
       color: #ffffff;
     }
-
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 2rem;
+    }
+    .button-group button {
+      padding: 10px 20px;
+      font-size: 14px;
+      background-color: #62aaff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .button-group button:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
     footer {
       text-align: center;
       margin-top: 3rem;
@@ -93,12 +99,10 @@
       color: #aaa;
       padding-bottom: 1rem;
     }
-
     .fade-in {
       opacity: 0;
       animation: fadeInAnimation 2s ease forwards;
     }
-
     @keyframes fadeInAnimation {
       to {
         opacity: 1;
@@ -122,23 +126,29 @@
 
   <h1 class="paper-title">Justice, Duty, and the Greater Good: Ethical Conflicts in <em>The Dark Knight</em> and <em>Captain America: Civil War</em></h1>
 
-  <iframe src="Justice_Duty_Ethics_Superheroes_Paper_Kingsberry.pdf" width="100%" height="600px" style="border:none;"></iframe>
+  <p>Superhero films do more than entertain their audiences; they can cause them to reflect and explore moral and philosophical issues surrounding justice, responsibility, and ethical choices. Two prominent examples are The Dark Knight and Captain America: Civil War...</p>
+
+  <!-- (Continue your full research paper text here...) -->
 
   <h2>Works Cited</h2>
   <ul>
     <li>
-      "Groundwork for the Metaphysics of Morals" by Immanuel Kant.
-      <a href="kant1785.pdf" target="_blank">Read PDF</a>
+      "Groundwork for the Metaphysics of Morals" by Immanuel Kant. <a href="kant1785.pdf" target="_blank">Read PDF</a>
     </li>
     <li>
-      "Superhero Films: Fascist or Morally Virtuous?"
-      <a href="Superhero%20Films_%20Fascist%20or%20Morally%20Virtuous_.pdf" target="_blank">Read PDF</a>
+      "Superhero Films: Fascist or Morally Virtuous?" <a href="Superhero%20Films_%20Fascist%20or%20Morally%20Virtuous_.pdf" target="_blank">Read PDF</a>
     </li>
     <li>
-      The Gutenberg Project Text.
-      <a href="gutenberg.org_cache_epub_11224_pg11224.txt.pdf" target="_blank">Read PDF</a>
+      The Gutenberg Project Text. <a href="gutenberg.org_cache_epub_11224_pg11224.txt.pdf" target="_blank">Read PDF</a>
     </li>
   </ul>
+
+  <div class="button-group">
+    <button onclick="window.print()">Print This Page</button>
+    <a href="Justice_Duty_Ethics_Superheroes_Paper_Kingsberry.pdf" download>
+      <button>Download Paper</button>
+    </a>
+  </div>
 
 </div>
 
