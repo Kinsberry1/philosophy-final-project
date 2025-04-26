@@ -1,26 +1,38 @@
-[# Philosophy Final Project - Keith Kingsberry
+# Philosophy Final Project – PHIL 1313 (Spring 2025)
 
-This is a professional website showcasing my final research paper for PHIL 1313: Introduction to Philosophy at North American University (Spring 2025).
+## 📘 Project Overview
+This is my final project for **Introduction to Philosophy (PHIL 1313)** at North American University, under the instruction of Professor Stacey M. Burleson.
 
-## Project Title
-**Justice, Duty, and the Greater Good: Ethical Conflicts in The Dark Knight and Captain America: Civil War**
+The project explores ethical theories through the lens of superhero narratives, focusing specifically on **Batman** (*The Dark Knight*) and **Captain America** (*Civil War*). It compares **Kantian Duty Ethics** and **Utilitarianism** while analyzing the moral decisions faced by these characters.
 
-## Key Features
-- MLA-formatted academic research paper
-- Full works cited section with clickable external references
-- Clean and professional design
-- Mobile responsive (works on phones and tablets)
-- Hosted using GitHub Pages
-
-## Technologies Used
-- HTML5
-- CSS3
-- GitHub Pages Hosting
-
-## View the Live Project
-👉 [Click Here to View the Live Website](https://kinsberry1.github.io/philosophy-final-project/)
+This site includes:
+- 📄 A full research paper (MLA formatted)
+- 📄 A professional About Me page
+- 📄 Linked sources and bibliography
+- 🎨 A modern, mobile-responsive webpage design
+- 🌐 Hosted live using GitHub Pages
 
 ---
 
-© 2025 Keith Kingsberry
-](https://kinsberry1.github.io/philosophy-final-project/about.html)
+## 🔗 Live Website
+👉 [View Project Website Here](https://kinsberry1.github.io/philosophy-final-project/)
+
+---
+
+## 🛠️ Built With
+- **HTML5** – Page Structure
+- **CSS3** – Styling and Responsive Design
+- **GitHub Pages** – Hosting Platform
+
+---
+
+## ✍️ Author
+**Keith Kingsberry**  
+North American University  
+Spring 2025
+
+---
+
+## 📑 Notes
+- All sources are cited in MLA format inside the research paper and on the project website.
+- This project was created for educational and portfolio-building purposes.
