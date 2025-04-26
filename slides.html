@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Justice, Duty, and the Greater Good</title>
+  <title>Final Slides - Justice, Duty, and the Greater Good</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6e/Philosophy-icon.png" type="image/png">
   <style>
@@ -13,22 +13,6 @@
       color: #ffffff;
       margin: 0;
       padding: 2rem;
-    }
-    header {
-      text-align: center;
-      padding-bottom: 2rem;
-    }
-    h1 {
-      font-size: 36px;
-      margin-bottom: 0.5rem;
-    }
-    h2 {
-      font-size: 28px;
-      margin-bottom: 2rem;
-    }
-    p, li {
-      font-size: 20px;
-      line-height: 1.6;
     }
     nav {
       display: flex;
@@ -45,9 +29,46 @@
       text-decoration: underline;
       color: #ffffff;
     }
-    .content {
-      max-width: 1000px;
-      margin: auto;
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+    .slide {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+    ul {
+      margin-top: 1rem;
+      padding-left: 2rem;
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+    .button-group {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      gap: 2rem;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #62aaff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #ffffff;
+      color: #000000;
     }
     footer {
       text-align: center;
@@ -61,8 +82,8 @@
 
 <nav>
   <a href="index.html">Home</a>
-  <a href="about.html">About Me</a>
   <a href="slides.html">Final Slides</a>
+  <a href="about.html">About Me</a>
 </nav>
 
 <header>
@@ -70,21 +91,110 @@
   <h2>Ethical Conflicts in The Dark Knight and Captain America: Civil War</h2>
 </header>
 
-<div class="content">
-  <p><strong>Research Paper:</strong></p>
-  <iframe src="Justice_Duty_Ethics_Superheroes_Paper_Kingsberry.pdf" width="100%" height="600px" style="border:none;"></iframe>
-
-  <h2>Works Cited</h2>
+<div class="slide" id="slide-container">
+  <h2>Slide 1: Overview</h2>
   <ul>
-    <li>Immanuel Kant, <em>Groundwork of the Metaphysics of Morals</em>.</li>
-    <li>"Superhero Films: Fascist or Morally Virtuous?"</li>
-    <li>OpenStax, <em>Introduction to Philosophy</em>.</li>
+    <li>Superhero narratives reveal ethical dilemmas.</li>
+    <li>Focus: Batman and Captain America’s moral conflicts.</li>
+    <li>Compare Kantian ethics vs. utilitarianism.</li>
   </ul>
+</div>
+
+<div class="button-group">
+  <button onclick="previousSlide()">Previous</button>
+  <button onclick="nextSlide()">Next</button>
 </div>
 
 <footer>
   © 2025 Keith Kingsberry
 </footer>
+
+<script>
+  const slides = [
+    {
+      title: "Slide 1: Overview",
+      points: [
+        "Superhero narratives reveal ethical dilemmas.",
+        "Focus: Batman and Captain America’s moral conflicts.",
+        "Compare Kantian ethics vs. utilitarianism."
+      ]
+    },
+    {
+      title: "Slide 2: Kantian Ethics",
+      points: [
+        "Morality based on duty, not consequences.",
+        "The Categorical Imperative: universal moral laws.",
+        "Respect for individuals and autonomy."
+      ]
+    },
+    {
+      title: "Slide 3: Utilitarianism",
+      points: [
+        "Focus on outcomes: greatest good for the greatest number.",
+        "Moral decisions based on benefits and harms.",
+        "Flexible but may sacrifice individual rights."
+      ]
+    },
+    {
+      title: "Slide 4: Batman’s Moral Code",
+      points: [
+        "Refuses to kill—even when expedient.",
+        "Mass surveillance dilemma: sacrifice ethics for safety?",
+        "Ultimately reaffirms duty-based ethics."
+      ]
+    },
+    {
+      title: "Slide 5: Captain America’s Stand",
+      points: [
+        "Rejects Sokovia Accords to maintain moral autonomy.",
+        "Emphasizes individual conscience over government control.",
+        "Clash with utilitarian reasoning (Iron Man)."
+      ]
+    },
+    {
+      title: "Slide 6: Final Reflection",
+      points: [
+        "True heroism involves sacrifice for principle.",
+        "Ethical clarity over popularity or expediency.",
+        "Enduring value of Kantian ethics in a chaotic world."
+      ]
+    },
+    {
+      title: "Slide 7: Works Cited",
+      points: [
+        "Groundwork for the Metaphysics of Morals by Immanuel Kant.",
+        "Superhero Films: Fascist or Morally Virtuous?",
+        "The Gutenberg Project Text, Public Domain."
+      ]
+    }
+  ];
+
+  let currentSlide = 0;
+  const container = document.getElementById('slide-container');
+
+  function showSlide(index) {
+    container.innerHTML = `
+      <h2>${slides[index].title}</h2>
+      <ul>
+        ${slides[index].points.map(point => `<li>${point}</li>`).join('')}
+      </ul>
+    `;
+  }
+
+  function nextSlide() {
+    if (currentSlide < slides.length - 1) {
+      currentSlide++;
+      showSlide(currentSlide);
+    }
+  }
+
+  function previousSlide() {
+    if (currentSlide > 0) {
+      currentSlide--;
+      showSlide(currentSlide);
+    }
+  }
+</script>
 
 </body>
 </html>
