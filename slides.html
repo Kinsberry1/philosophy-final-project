@@ -3,76 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Final Slides - Keith Kingsberry</title>
+  <title>Justice, Duty, and the Greater Good</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6e/Philosophy-icon.png" type="image/png">
   <style>
     body {
       font-family: 'Lato', sans-serif;
       background: linear-gradient(to bottom right, #0c0f14, #1b1f27);
       color: #ffffff;
       margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      padding: 2rem;
+    }
+    header {
       text-align: center;
-    }
-    .slide {
-      display: none;
-      max-width: 1000px;
-      padding: 3rem;
-      background-color: rgba(255, 255, 255, 0.08);
-      border-radius: 15px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
-      margin-top: 100px;
-    }
-    .slide.active {
-      display: block;
-      animation: fade 1s ease forwards;
-    }
-    @keyframes fade {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      padding-bottom: 2rem;
     }
     h1 {
       font-size: 36px;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
-    p {
-      font-size: 22px;
-      line-height: 1.8;
-      margin: 1rem 0;
+    h2 {
+      font-size: 28px;
+      margin-bottom: 2rem;
     }
-    .buttons {
-      margin: 2rem;
-    }
-    button {
-      background-color: #62aaff;
-      color: #0c0f14;
-      border: none;
-      padding: 1rem 2rem;
-      margin: 0 1rem;
+    p, li {
       font-size: 20px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #ffffff;
-      color: #0c0f14;
+      line-height: 1.6;
     }
     nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 1rem;
       display: flex;
       justify-content: center;
       gap: 2rem;
-      z-index: 999;
+      margin-bottom: 2rem;
     }
     nav a {
       color: #62aaff;
@@ -83,10 +45,15 @@
       text-decoration: underline;
       color: #ffffff;
     }
-    @media (max-width: 768px) {
-      h1 { font-size: 28px; }
-      p { font-size: 18px; }
-      button { padding: 0.5rem 1rem; font-size: 16px; }
+    .content {
+      max-width: 1000px;
+      margin: auto;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 14px;
+      color: #aaa;
     }
   </style>
 </head>
@@ -98,74 +65,26 @@
   <a href="slides.html">Final Slides</a>
 </nav>
 
-<div id="slides-container">
-  <div class="slide active">
-    <h1>Justice, Duty, and the Greater Good:<br>Ethical Conflicts in The Dark Knight and Captain America: Civil War</h1>
-    <p>Keith Kingsberry</p>
-  </div>
+<header>
+  <h1>Justice, Duty, and the Greater Good</h1>
+  <h2>Ethical Conflicts in The Dark Knight and Captain America: Civil War</h2>
+</header>
 
-  <div class="slide">
-    <h1>Introduction</h1>
-    <p>Superhero narratives often explore deep moral conflicts. Heroes must choose between personal values and societal expectations.</p>
-  </div>
+<div class="content">
+  <p><strong>Research Paper:</strong></p>
+  <iframe src="Justice_Duty_Ethics_Superheroes_Paper_Kingsberry.pdf" width="100%" height="600px" style="border:none;"></iframe>
 
-  <div class="slide">
-    <h1>Kantian Ethics (Duty-Based)</h1>
-    <p>Morality is grounded in duty. Actions are judged based on intention, not outcomes.</p>
-  </div>
-
-  <div class="slide">
-    <h1>Utilitarianism (Consequence-Based)</h1>
-    <p>Ethical decisions should promote the greatest good for the greatest number of people.</p>
-  </div>
-
-  <div class="slide">
-    <h1>Batman and Moral Duty</h1>
-    <p>Batman adheres to strict moral codes. He refuses to kill, even if it would save lives in the short-term.</p>
-  </div>
-
-  <div class="slide">
-    <h1>Captain America and Individual Rights</h1>
-    <p>Captain America prioritizes personal freedom and moral responsibility over government mandates, even at great personal cost.</p>
-  </div>
-
-  <div class="slide">
-    <h1>Conclusion</h1>
-    <p>True heroism requires ethical sacrifice, balancing personal duty with the needs of society.</p>
-  </div>
-
-  <div class="slide">
-    <h1>Works Cited</h1>
-    <p>Immanuel Kant, "Groundwork of the Metaphysics of Morals"<br>Superhero Films: Fascist or Morally Virtuous?<br>OpenStax Introduction to Philosophy</p>
-  </div>
+  <h2>Works Cited</h2>
+  <ul>
+    <li>Immanuel Kant, <em>Groundwork of the Metaphysics of Morals</em>.</li>
+    <li>"Superhero Films: Fascist or Morally Virtuous?"</li>
+    <li>OpenStax, <em>Introduction to Philosophy</em>.</li>
+  </ul>
 </div>
 
-<div class="buttons">
-  <button onclick="previousSlide()">Back</button>
-  <button onclick="nextSlide()">Next</button>
-</div>
-
-<script>
-  const slides = document.querySelectorAll('.slide');
-  let currentSlide = 0;
-
-  function showSlide(index) {
-    slides.forEach((slide, idx) => {
-      slide.classList.remove('active');
-      if (idx === index) slide.classList.add('active');
-    });
-  }
-
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-  }
-
-  function previousSlide() {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide(currentSlide);
-  }
-</script>
+<footer>
+  © 2025 Keith Kingsberry
+</footer>
 
 </body>
 </html>
