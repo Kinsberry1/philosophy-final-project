@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About Me - Keith Kingsberry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justice, Duty, and the Greater Good: Ethical Conflicts in The Dark Knight and Captain America: Civil War</title>
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6e/Philosophy-icon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -26,7 +27,6 @@
       background-color: rgba(255, 255, 255, 0.05);
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-      text-align: center;
     }
 
     nav {
@@ -49,19 +49,31 @@
       text-decoration: underline;
     }
 
-    img {
-      display: block;
-      margin: 2rem auto;
-      max-width: 400px;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    .mla-header {
+      margin: 0;
+      text-align: left;
+    }
+
+    .paper-title {
+      text-align: center;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
 
     p {
-      margin-bottom: 1rem;
-      text-align: justify;
       text-indent: 0.5in;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+
+    ul {
+      margin-top: 2rem;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 1rem;
     }
 
     footer {
@@ -82,6 +94,20 @@
         opacity: 1;
       }
     }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 12pt;
+      }
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+      nav a {
+        margin: 0 10px;
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -91,19 +117,17 @@
   </nav>
 
   <div class="container fade-in">
-    <h1>About Me</h1>
+    <p class="mla-header">Keith Kingsberry</p>
+    <p class="mla-header">Professor Stacey M. Burleson</p>
+    <p class="mla-header">PHIL 1313 – Introduction to Philosophy</p>
+    <p class="mla-header">23 April 2025</p>
 
-    <img src="images/batman-minimalist-art-4k-z0.jpg" alt="Batman Symbolizing Resilience">
+    <h1 class="paper-title">Justice, Duty, and the Greater Good: Ethical Conflicts in <em>The Dark Knight</em> and <em>Captain America: Civil War</em></h1>
 
-    <p>My name is Keith Kingsberry. I am currently studying computer science with the goal of building a better future for myself. I originally pursued manual QA to break into IT and then earned an SDET certification, which I now understand is only the foundation of my true potential.</p>
+    <!-- Paper content remains unchanged -->
 
-    <p>Through this Introduction to Philosophy course, I learned that my personal views and real-world experiences hold value and depth. Philosophy helped me realize how much critical thinking and questioning fit naturally into who I am. I found a surprising strength in being the 'devil's advocate,' challenging ideas to gain new perspectives.</p>
-
-    <p>My long-term goal is to keep building my knowledge, master the skills I've started learning, and push myself beyond any limits. Much like Batman, my journey is not without struggle, but it is defined by resilience, internal strength, and the relentless pursuit of becoming better every day.</p>
-  </div>
-
-  <footer>
-    © 2025 Keith Kingsberry
+    <footer>
+    © 2025 Keith Kingsberry | <a href="https://github.com/Kinsberry1" target="_blank">View on GitHub</a>
   </footer>
 </body>
 </html>
