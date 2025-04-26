@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me - Keith Kingsberry</title>
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6e/Philosophy-icon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6e/Philosophy-icon.png" type="image/png">
   <style>
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Lato', sans-serif;
       font-size: 14pt;
@@ -16,6 +19,7 @@
       background: linear-gradient(to bottom right, #0c0f14, #1b1f27);
       color: #ffffff;
     }
+
     .container {
       max-width: 960px;
       margin: 2rem auto;
@@ -25,12 +29,14 @@
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
       text-align: center;
     }
+
     nav {
       text-align: center;
       padding: 1.5rem;
       background-color: rgba(255, 255, 255, 0.05);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
+
     nav a {
       margin: 0 15px;
       font-size: 16px;
@@ -38,23 +44,26 @@
       text-decoration: none;
       transition: color 0.3s ease;
     }
+
     nav a:hover {
       color: #ffffff;
       text-decoration: underline;
     }
+
     img {
       display: block;
       margin: 2rem auto;
       max-width: 400px;
       height: auto;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
     }
+
     p {
-      margin-bottom: 1rem;
-      text-align: justify;
       text-indent: 0.5in;
+      margin-bottom: 1.5rem;
     }
+
     footer {
       text-align: center;
       margin-top: 3rem;
@@ -62,40 +71,42 @@
       color: #aaa;
       padding-bottom: 1rem;
     }
+
     .fade-in {
       opacity: 0;
       animation: fadeInAnimation 2s ease forwards;
     }
+
     @keyframes fadeInAnimation {
-      to { opacity: 1; }
-    }
-    @media (max-width: 768px) {
-      body { font-size: 12pt; }
-      .container { margin: 1rem; padding: 1rem; }
-      nav a { margin: 0 10px; font-size: 14px; }
+      to {
+        opacity: 1;
+      }
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-  </nav>
 
-  <div class="container fade-in">
-    <h1>About Me</h1>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="slides.html">Final Slides</a>
+  <a href="about.html">About Me</a>
+</nav>
 
-    <img src="images/batman-minimalist-art-4k-z0.jpg" alt="Batman Symbolizing Resilience">
+<div class="container fade-in">
+  <h1>About Me</h1>
 
-    <p>My name is Keith Kingsberry. I am currently studying computer science with the goal of building a better future for myself. I originally pursued manual QA to break into IT and then earned an SDET certification, which I now understand is only the foundation of my true potential.</p>
+  <img src="images/batman-minimalist-art-4k-z0.jpg" alt="Batman Symbolizing Resilience">
 
-    <p>Through this Introduction to Philosophy course, I learned that my personal views and real-world experiences hold value and depth. Philosophy helped me realize how much critical thinking and questioning fit naturally into who I am. I found a surprising strength in being the 'devil's advocate,' challenging ideas to gain new perspectives.</p>
+  <p>My name is Keith Kingsberry. I am currently studying computer science with the goal of building a better future for myself. I originally pursued manual QA to break into IT and then earned an SDET certification, which I now understand is only the foundation of my true potential.</p>
 
-    <p>My long-term goal is to keep building my knowledge, master the skills I've started learning, and push myself beyond any limits. Much like Batman, my journey is not without struggle, but it is defined by resilience, internal strength, and the relentless pursuit of becoming better every day.</p>
-  </div>
+  <p>Through the Introduction to Philosophy course, I learned that my personal views and real-world experiences hold significant value. Philosophy helped me realize how critical thinking and questioning align naturally with who I am. I found strength in taking the role of the 'devil's advocate,' challenging ideas to gain a deeper understanding of diverse perspectives.</p>
 
-  <footer>
-    © 2025 Keith Kingsberry
-  </footer>
+  <p>My long-term goal is to continue expanding my knowledge, strengthening the skills I've begun to build, and pushing myself beyond any limits. Much like Batman, my journey is defined by resilience, inner strength, and the relentless pursuit of becoming better every day, despite the struggles and setbacks.</p>
+</div>
+
+<footer>
+  © 2025 Keith Kingsberry | <a href="https://github.com/Kinsberry1" target="_blank">View on GitHub</a>
+</footer>
+
 </body>
 </html>
