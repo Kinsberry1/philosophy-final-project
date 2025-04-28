@@ -7,6 +7,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6e/Philosophy-icon.png" type="image/png">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Lato', sans-serif;
       background: linear-gradient(to bottom right, #0c0f14, #1b1f27);
@@ -28,6 +31,31 @@
     nav a:hover {
       text-decoration: underline;
       color: #ffffff;
+    }
+    .audio-container {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .audio-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #62aaff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-bottom: 1rem;
+    }
+    .audio-button:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
+    audio {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      display: block;
+      margin-top: 1rem;
     }
     header {
       text-align: center;
@@ -85,6 +113,14 @@
   <a href="slides.html">Final Slides</a>
   <a href="about.html">About Me</a>
 </nav>
+
+<div class="audio-container">
+  <button class="audio-button" onclick="document.getElementById('audio-player').play()">Listen to Orientation Presentation</button>
+  <audio id="audio-player" controls>
+    <source src="philosophy%20Presentation%20(3).m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</div>
 
 <header>
   <h1>Justice, Duty, and the Greater Good</h1>
@@ -170,31 +206,4 @@
   ];
 
   let currentSlide = 0;
-  const container = document.getElementById('slide-container');
-
-  function showSlide(index) {
-    container.innerHTML = `
-      <h2>${slides[index].title}</h2>
-      <ul>
-        ${slides[index].points.map(point => `<li>${point}</li>`).join('')}
-      </ul>
-    `;
-  }
-
-  function nextSlide() {
-    if (currentSlide < slides.length - 1) {
-      currentSlide++;
-      showSlide(currentSlide);
-    }
-  }
-
-  function previousSlide() {
-    if (currentSlide > 0) {
-      currentSlide--;
-      showSlide(currentSlide);
-    }
-  }
-</script>
-
-</body>
-</html>
+  const container = document.getElementById('slide
