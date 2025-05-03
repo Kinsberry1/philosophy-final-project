@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Oral Presentation - Philosophy Final Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Slides - Justice, Duty, and the Greater Good</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6e/Philosophy-icon.png" type="image/png">
   <style>
@@ -29,22 +29,46 @@
       text-decoration: underline;
       color: #ffffff;
     }
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
+    header {
       text-align: center;
+      margin-bottom: 2rem;
     }
-    h1 {
+    h1, h2 {
       margin-bottom: 1rem;
     }
-    iframe {
-      width: 100%;
-      max-width: 800px;
-      height: 450px;
-      border: none;
-      margin-top: 2rem;
+    .slide {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.05);
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+    ul {
+      margin-top: 1rem;
+      padding-left: 2rem;
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+    .button-group {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      gap: 2rem;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #62aaff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #ffffff;
+      color: #000000;
     }
     footer {
       text-align: center;
@@ -59,20 +83,132 @@
 <nav>
   <a href="index.html">Home</a>
   <a href="slides.html">Final Slides</a>
+  <a href="presentation.html">Presentation</a>
   <a href="about.html">About Me</a>
-  <a href="presentation.html">Oral Presentation</a>
 </nav>
 
-<div class="container">
-  <h1>Oral Presentation</h1>
-  <p>Watch the 5-minute presentation summarizing the main points of my research paper.</p>
-  
-  <iframe src="https://www.youtube.com/embed/CUAX5Ka72vQ" allowfullscreen></iframe>
+<header>
+  <h1>Justice, Duty, and the Greater Good</h1>
+  <h2>Ethical Conflicts in Superhero Narratives</h2>
+</header>
+
+<div class="slide" id="slide-container">
+  <!-- Content inserted via JavaScript -->
+</div>
+
+<div class="button-group">
+  <button onclick="previousSlide()">Previous</button>
+  <button onclick="nextSlide()">Next</button>
 </div>
 
 <footer>
-  © 2025 Keith Kingsberry | <a href="https://github.com/Kinsberry1" target="_blank">GitHub</a>
+  © 2025 Keith Kingsberry
 </footer>
+
+<script>
+  const slides = [
+    {
+      title: "Slide 1: Title Slide",
+      points: [
+        "Justice, Duty, and the Greater Good",
+        "Ethical Conflicts in Superhero Narratives",
+        "By Keith Kingsberry",
+        "PHIL 1313 – Spring 2025"
+      ]
+    },
+    {
+      title: "Slide 2: Introduction",
+      points: [
+        "Superhero films explore deep moral conflicts",
+        "Heroes face difficult ethical decisions",
+        "Focus on Batman and Captain America",
+        "Compare Kantian duty vs. utilitarian outcomes"
+      ]
+    },
+    {
+      title: "Slide 3: Kantian Ethics (Duty-Based)",
+      points: [
+        "Actions must follow moral duty, not results",
+        "Right and wrong based on universal rules",
+        "Categorical Imperative: Act universally",
+        "Moral integrity matters more than consequences"
+      ]
+    },
+    {
+      title: "Slide 4: Utilitarianism (Consequence-Based)",
+      points: [
+        "Moral decisions judged by results",
+        "Maximize happiness, minimize harm",
+        "Sometimes sacrifice for greater good",
+        "Seen with Iron Man in Civil War"
+      ]
+    },
+    {
+      title: "Slide 5: Batman’s Ethics in The Dark Knight",
+      points: [
+        "Follows strict no-killing rule (duty)",
+        "Refuses to kill Joker despite chaos",
+        "Creates surveillance system (utilitarian choice)",
+        "Destroys it to maintain ethics"
+      ]
+    },
+    {
+      title: "Slide 6: Captain America's Ethics in Civil War",
+      points: [
+        "Rejects government control (Sokovia Accords)",
+        "Believes in personal moral responsibility",
+        "Fights for individual freedoms",
+        "Prioritizes conscience over authority"
+      ]
+    },
+    {
+      title: "Slide 7: Conclusion",
+      points: [
+        "Heroes embody Kantian principles",
+        "True heroism requires moral sacrifice",
+        "Ethical clarity over convenience",
+        "Justice demands unwavering values"
+      ]
+    },
+    {
+      title: "Slide 8: Works Cited",
+      points: [
+        "Immanuel Kant, Groundwork for the Metaphysics of Morals",
+        "Superhero Films: Fascist or Morally Virtuous?",
+        "Introduction to Philosophy (OpenStax)"
+      ]
+    }
+  ];
+
+  let currentSlide = 0;
+  const container = document.getElementById('slide-container');
+
+  function showSlide(index) {
+    container.innerHTML = `
+      <h2>${slides[index].title}</h2>
+      <ul>
+        ${slides[index].points.map(point => `<li>${point}</li>`).join('')}
+      </ul>
+    `;
+  }
+
+  function nextSlide() {
+    if (currentSlide < slides.length - 1) {
+      currentSlide++;
+      showSlide(currentSlide);
+    }
+  }
+
+  function previousSlide() {
+    if (currentSlide > 0) {
+      currentSlide--;
+      showSlide(currentSlide);
+    }
+  }
+
+  // Initialize first slide
+  showSlide(currentSlide);
+</script>
 
 </body>
 </html>
