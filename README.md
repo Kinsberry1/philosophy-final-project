@@ -28,8 +28,7 @@ This site includes:
 
 ## ✍️ Author
 **Keith Kingsberry**  
-North American University  
-Spring 2025
+
 
 ---
 
