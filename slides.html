@@ -7,9 +7,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6e/Philosophy-icon.png" type="image/png">
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
     body {
       font-family: 'Lato', sans-serif;
       background: linear-gradient(to bottom right, #0c0f14, #1b1f27);
@@ -31,31 +28,6 @@
     nav a:hover {
       text-decoration: underline;
       color: #ffffff;
-    }
-    .audio-container {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .audio-button {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #62aaff;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      margin-bottom: 1rem;
-    }
-    .audio-button:hover {
-      background-color: #ffffff;
-      color: #000000;
-    }
-    audio {
-      width: 100%;
-      max-width: 600px;
-      margin: auto;
-      display: block;
-      margin-top: 1rem;
     }
     header {
       text-align: center;
@@ -114,26 +86,13 @@
   <a href="about.html">About Me</a>
 </nav>
 
-<div class="audio-container">
-  <button class="audio-button" onclick="document.getElementById('audio-player').play()">Listen to Orientation Presentation</button>
-  <audio id="audio-player" controls>
-    <source src="philosophy%20Presentation%20(3).m4a" type="audio/mp4">
-    Your browser does not support the audio element.
-  </audio>
-</div>
-
 <header>
   <h1>Justice, Duty, and the Greater Good</h1>
-  <h2>Ethical Conflicts in The Dark Knight and Captain America: Civil War</h2>
+  <h2>Ethical Conflicts in Superhero Narratives</h2>
 </header>
 
 <div class="slide" id="slide-container">
-  <h2>Slide 1: Overview</h2>
-  <ul>
-    <li>Superhero narratives reveal ethical dilemmas.</li>
-    <li>Focus: Batman and Captain America’s moral conflicts.</li>
-    <li>Compare Kantian ethics vs. utilitarianism.</li>
-  </ul>
+  <!-- Content inserted via JavaScript -->
 </div>
 
 <div class="button-group">
@@ -148,62 +107,107 @@
 <script>
   const slides = [
     {
-      title: "Slide 1: Overview",
+      title: "Slide 1: Title Slide",
       points: [
-        "Superhero narratives reveal ethical dilemmas.",
-        "Focus: Batman and Captain America’s moral conflicts.",
-        "Compare Kantian ethics vs. utilitarianism."
+        "Justice, Duty, and the Greater Good",
+        "Ethical Conflicts in Superhero Narratives",
+        "By Keith Kingsberry",
+        "PHIL 1313 – Spring 2025"
       ]
     },
     {
-      title: "Slide 2: Kantian Ethics",
+      title: "Slide 2: Introduction",
       points: [
-        "Morality based on duty, not consequences.",
-        "The Categorical Imperative: universal moral laws.",
-        "Respect for individuals and autonomy."
+        "Superhero films explore deep moral conflicts",
+        "Heroes face difficult ethical decisions",
+        "Focus on Batman and Captain America",
+        "Compare Kantian duty vs. utilitarian outcomes"
       ]
     },
     {
-      title: "Slide 3: Utilitarianism",
+      title: "Slide 3: Kantian Ethics (Duty-Based)",
       points: [
-        "Focus on outcomes: greatest good for the greatest number.",
-        "Moral decisions based on benefits and harms.",
-        "Flexible but may sacrifice individual rights."
+        "Actions must follow moral duty, not results",
+        "Right and wrong based on universal rules",
+        "Categorical Imperative: Act universally",
+        "Moral integrity matters more than consequences"
       ]
     },
     {
-      title: "Slide 4: Batman’s Moral Code",
+      title: "Slide 4: Utilitarianism (Consequence-Based)",
       points: [
-        "Refuses to kill—even when expedient.",
-        "Mass surveillance dilemma: sacrifice ethics for safety?",
-        "Ultimately reaffirms duty-based ethics."
+        "Moral decisions judged by results",
+        "Maximize happiness, minimize harm",
+        "Sometimes sacrifice for greater good",
+        "Seen with Iron Man in Civil War"
       ]
     },
     {
-      title: "Slide 5: Captain America’s Stand",
+      title: "Slide 5: Batman’s Ethics in The Dark Knight",
       points: [
-        "Rejects Sokovia Accords to maintain moral autonomy.",
-        "Emphasizes individual conscience over government control.",
-        "Clash with utilitarian reasoning (Iron Man)."
+        "Follows strict no-killing rule (duty)",
+        "Refuses to kill Joker despite chaos",
+        "Creates surveillance system (utilitarian choice)",
+        "Destroys it to maintain ethics"
       ]
     },
     {
-      title: "Slide 6: Final Reflection",
+      title: "Slide 6: Captain America's Ethics in Civil War",
       points: [
-        "True heroism involves sacrifice for principle.",
-        "Ethical clarity over popularity or expediency.",
-        "Enduring value of Kantian ethics in a chaotic world."
+        "Rejects government control (Sokovia Accords)",
+        "Believes in personal moral responsibility",
+        "Fights for individual freedoms",
+        "Prioritizes conscience over authority"
       ]
     },
     {
-      title: "Slide 7: Works Cited",
+      title: "Slide 7: Conclusion",
       points: [
-        "Groundwork for the Metaphysics of Morals by Immanuel Kant.",
+        "Heroes embody Kantian principles",
+        "True heroism requires moral sacrifice",
+        "Ethical clarity over convenience",
+        "Justice demands unwavering values"
+      ]
+    },
+    {
+      title: "Slide 8: Works Cited",
+      points: [
+        "Immanuel Kant, Groundwork for the Metaphysics of Morals",
         "Superhero Films: Fascist or Morally Virtuous?",
-        "The Gutenberg Project Text, Public Domain."
+        "Introduction to Philosophy (OpenStax)"
       ]
     }
   ];
 
   let currentSlide = 0;
-  const container = document.getElementById('slide
+  const container = document.getElementById('slide-container');
+
+  function showSlide(index) {
+    container.innerHTML = `
+      <h2>${slides[index].title}</h2>
+      <ul>
+        ${slides[index].points.map(point => `<li>${point}</li>`).join('')}
+      </ul>
+    `;
+  }
+
+  function nextSlide() {
+    if (currentSlide < slides.length - 1) {
+      currentSlide++;
+      showSlide(currentSlide);
+    }
+  }
+
+  function previousSlide() {
+    if (currentSlide > 0) {
+      currentSlide--;
+      showSlide(currentSlide);
+    }
+  }
+
+  // Initialize first slide
+  showSlide(currentSlide);
+</script>
+
+</body>
+</html>
